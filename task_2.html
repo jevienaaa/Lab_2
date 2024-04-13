@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Labsheet 2 (Task 2)</title>
+</head>
+
+<body>
+    <h1>Conference Registration Form</h1>
+
+    <form action="/action_page.php">
+        <label for="full_name">Full Name: </label><br>
+        <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required><br>
+
+        <label for="email">Email Adress: </label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+        <label for="age">Age: </label><br>
+        <input type="number" id="age" name="age" placeholder="18" min="18" max="99" required><br><br>
+        
+        <label for="gender">Gender: </label><br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>        
+        
+        <br><label for="country">Country of Residence: </label><br>
+        <select name="country">
+            <option value="malaysia">Malaysia</option> 
+            <option value="australia">Australia</option>   
+            <option value="china">China</option>  
+            <option value="india">India</option>   
+            <option value="japan">Japan</option>        
+            <option value="korea">Korea</option>  
+   
+        </select><br>
+
+        <br><label for="interest">Area of Interest: </label><br>
+        <input type="checkbox" name="interest" value="softwaredev">Software Development<br>
+        <input type="checkbox" name="interest" value="ds">Data Science<br>
+        <input type="checkbox" name="interest" value="cybersec">Cyber Security<br>
+        <input type="checkbox" name="interest" value="ai">Artificial Intelligence<br>
+
+        <br><label for="level">Experience Level: </label><br>
+        <input type="radio" name="level" value="beginner">Beginner<br>
+        <input type="radio" name="level" value="intermediate">Intermediate<br>        
+        <input type="radio" name="level" value="advanced">Advanced<br>        
+
+        <br><label for="comment">Comments or Questions: </label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50">Any comments or questions?</textarea>
+        
+        <br><input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br>
+
+    </form>
+
+</body>
+
+</html>
